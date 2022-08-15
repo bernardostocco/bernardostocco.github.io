@@ -1,0 +1,212 @@
+/*CONFIG PADRÃO*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', serif;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/*HEADER*/
+
+header .container {
+	padding: 30px 20%;
+}
+
+header .logo h2 {
+	color: #215e9c;
+	cursor: pointer;
+	font-size: 30px;
+}
+
+header .logo h2:hover {
+	padding: 0 5px;
+	color: rgb(120, 120, 120);
+	cursor: pointer;
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(38, 75, 150, 1);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(38, 75, 150, 1);
+	box-shadow: 1px 1px 1px 0px rgba(38, 75, 150, 1);
+	transform: scale(1.09, 1.09);
+	transition: 0.5s;
+	border-radius: 4px;
+}
+
+header .menu ul {
+	list-style-type: none;
+	padding-top: 3px;
+}
+
+header .menu ul li {
+	display: inline-block;
+	cursor: pointer;
+	font-size: 13px;
+	padding: 4px;
+	border-radius: 4px;
+}
+
+header .menu ul li:not(.not) {
+	border: 0.5px solid rgb(120, 120, 120);
+}
+
+header .menu ul li:not(.not):hover {
+	background-color: #3576b8;
+	border: 0.5px solid #1a4a7a;
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(1, 50, 149, 1);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(1, 50, 149, 1);
+	box-shadow: 0px 1px 2px 0px rgba(1, 50, 149, 1);
+}
+
+header .menu ul li:not(.not):hover a {
+	color: white;
+}
+
+header .menu ul li input[type=text] {
+	padding: 4px 2%;
+	width: 100px;
+	border-radius: 4px;
+	border: 0.5px solid rgb(120, 120, 120);
+	margin-right: 5px;
+}
+
+header .menu ul li input[type=text]:focus {
+	outline: 0;
+	border: 0.5px solid #1a4a7a;
+}
+
+header .menu ul li i {
+	border: 0.5px solid rgb(120, 120, 120);
+	width: 27px;
+	padding: 6px;
+	border-radius: 8px;
+}
+
+header .menu ul li i:hover {
+	background-color: #3576b8;
+	color: white;
+	border: 0.5px solid #1a4a7a;
+	-webkit-box-shadow: 0px 1px 2px 0px rgba(1, 50, 149, 1);
+	-moz-box-shadow: 0px 1px 2px 0px rgba(1, 50, 149, 1);
+	box-shadow: 0px 1px 2px 0px rgba(1, 50, 149, 1);
+}
+
+header .menu ul li a {
+	text-decoration: none;
+	color: rgb(120, 120, 120);
+}
+
+/*BOX-CAPTURA*/
+section.box-captura {
+	background-color: #1a4cb0;
+}
+
+section.box-captura .bar-top {
+	background-image: -webkit-background-image: linear-gradient(-45deg, rgba(255, 255, 255, .15)25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15)50%, rgba(255, 255, 255, .15)75%, transparent 75%, transparent);
+	;
+	background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .15)25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15)50%, rgba(255, 255, 255, .15)75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .15)25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15)50%, rgba(255, 255, 255, .15)75%, transparent 75%, transparent);
+	background-image: linear-gradient(-45deg, rgba(255, 255, 255, .15)25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15)50%, rgba(255, 255, 255, .15)75%, transparent 75%, transparent);
+	height: 17px;
+	background-size: 20px 20px;
+}
+
+section.box-captura .wraper-captura {
+	padding: 2% 17%;
+	text-align: center;
+}
+
+section.box-captura .box-single-chamada {
+	width: 33.33%;
+	float: left;
+	padding-top: 35px;
+}
+
+section.box-captura .box-single-chamada h3 {
+	font-size: 20px;
+	color: white;
+
+}
+
+section.box-captura .box-single-icon {
+	width: 33.33%;
+	float: left;
+	cursor: pointer;
+}
+
+section.box-captura .box-single-icon i {
+	font-size: 140px;
+	color: white;
+}
+
+section.box-captura .box-single-icon i:hover {
+	transform: scale(1.09, 1.09);
+	color: rgb(225, 225, 225);
+}
+
+section.box-captura .box-single-captura {
+	width: 33.33%;
+	float: left;
+	padding-top: 35px;
+}
+
+section.box-captura .box-single-captura input {
+	width: 100%;
+	padding: 7px;
+	border-radius: 4px;
+	outline: 0;
+	border: 0.3px solid rgb(225, 225, 225);
+}
+
+section.box-captura .box-single-captura button {
+	margin-top: 8px;
+	width: 100%;
+	padding: 7px;
+	border-radius: 4px;
+	outline: 0;
+	border: 0.3px solid #022fab;
+	background-color: #163eab;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+section.box-captura .box-single-captura button:hover {
+	transform: scale(1.09, 1.09);
+	background-color: #193cd4;
+}
+
+section.box-captura .box-single-captura button i {
+	float: right;
+	padding-top: 3px;
+}
+
+section.box-captura .box-single-captura p {
+	font-size: 10px;
+	color: white;
+	text-align: left;
+	margin-top: 4px;
+}
